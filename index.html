@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>API Reference</title>
+    <title>CasperLabs Contract Development</title>
 
     <style>
       .highlight table td { padding: 5px; }
@@ -196,20 +196,20 @@
   color: #f92672;
 }
     </style>
-    <link href="stylesheets/screen.css" rel="stylesheet" media="screen" />
-    <link href="stylesheets/print.css" rel="stylesheet" media="print" />
-      <script src="javascripts/all.js"></script>
+    <link href="stylesheets/screen-943858d5.css" rel="stylesheet" media="screen" />
+    <link href="stylesheets/print-bccf8c07.css" rel="stylesheet" media="print" />
+      <script src="javascripts/all-c5541673.js"></script>
   </head>
 
   <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
-        <img src="images/navbar.png" alt="Navbar" />
+        <img src="images/navbar-cad8cdcb.png" alt="Navbar" />
       </span>
     </a>
     <div class="toc-wrapper">
-      <img src="images/logo.png" class="logo" alt="Logo" />
+      <img src="images/logo-3248b702.png" class="logo" alt="Logo" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
               <a href="#" data-language-name="ruby">ruby</a>
@@ -223,26 +223,126 @@
       <ul id="toc" class="toc-list-h1">
           <li>
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
-          </li>
-          <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
-          </li>
-          <li>
-            <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#get-all-kittens" class="toc-h2 toc-link" data-title="Get All Kittens">Get All Kittens</a>
+                    <a href="#who-is-this-guide-for" class="toc-h2 toc-link" data-title="Who is this guide for">Who is this guide for</a>
                   </li>
                   <li>
-                    <a href="#get-a-specific-kitten" class="toc-h2 toc-link" data-title="Get a Specific Kitten">Get a Specific Kitten</a>
+                    <a href="#purpose-of-this-guide" class="toc-h2 toc-link" data-title="Purpose of this guide">Purpose of this guide</a>
                   </li>
                   <li>
-                    <a href="#delete-a-specific-kitten" class="toc-h2 toc-link" data-title="Delete a Specific Kitten">Delete a Specific Kitten</a>
+                    <a href="#background" class="toc-h2 toc-link" data-title="Background">Background</a>
+                  </li>
+                  <li>
+                    <a href="#how-to-use-this-guide" class="toc-h2 toc-link" data-title="How to use this guide">How to use this guide</a>
                   </li>
               </ul>
           </li>
           <li>
-            <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
+            <a href="#getting-started" class="toc-h1 toc-link" data-title="Getting Started">Getting Started</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#contract-development" class="toc-h2 toc-link" data-title="Contract Development">Contract Development</a>
+                  </li>
+                  <li>
+                    <a href="#pre-requisites" class="toc-h2 toc-link" data-title="Pre-requisites"><strong>Pre-requisites</strong></a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#supported-platforms" class="toc-h1 toc-link" data-title="Supported platforms"><strong>Supported platforms</strong></a>
+          </li>
+          <li>
+            <a href="#using-rust" class="toc-h1 toc-link" data-title="Using Rust">Using Rust</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#writing-contracts" class="toc-h2 toc-link" data-title="Writing Contracts">Writing Contracts</a>
+                  </li>
+                  <li>
+                    <a href="#the-smart-contract-api" class="toc-h2 toc-link" data-title="The smart contract API"><strong>The smart contract API</strong></a>
+                  </li>
+                  <li>
+                    <a href="#authentication" class="toc-h2 toc-link" data-title="Authentication">Authentication</a>
+                  </li>
+                  <li>
+                    <a href="#clcontracts" class="toc-h2 toc-link" data-title="CLContracts">CLContracts</a>
+                  </li>
+                  <li>
+                    <a href="#contract-examples" class="toc-h2 toc-link" data-title="Contract examples"><strong>Contract examples</strong></a>
+                  </li>
+                  <li>
+                    <a href="#get-all-clcontracts" class="toc-h2 toc-link" data-title="Get All CLContracts">Get All CLContracts</a>
+                  </li>
+                  <li>
+                    <a href="#get-a-specific-clcontract" class="toc-h2 toc-link" data-title="Get a Specific CLContract">Get a Specific CLContract</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#debugging-contracts" class="toc-h1 toc-link" data-title="Debugging contracts">Debugging contracts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#api-and-error-codes-in-the-execution-engine" class="toc-h2 toc-link" data-title="API and error codes in the Execution Engine">API and error codes in the Execution Engine</a>
+                  </li>
+                  <li>
+                    <a href="#checking-for-transaction-confirmations" class="toc-h2 toc-link" data-title="Checking for transaction confirmations">Checking for transaction confirmations</a>
+                  </li>
+                  <li>
+                    <a href="#using-graphql" class="toc-h2 toc-link" data-title="Using GraphQL">Using GraphQL</a>
+                  </li>
+                  <li>
+                    <a href="#using-the-grpc-interface" class="toc-h2 toc-link" data-title="Using the gRPC interface">Using the gRPC interface</a>
+                  </li>
+                  <li>
+                    <a href="#deciphering-data-in-blocks" class="toc-h2 toc-link" data-title="Deciphering data in blocks">Deciphering data in blocks</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#deploying-contracts" class="toc-h1 toc-link" data-title="Deploying Contracts">Deploying Contracts</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#how-to-structure-your-deployments" class="toc-h2 toc-link" data-title="How to structure your deployments">How to structure your deployments</a>
+                  </li>
+                  <li>
+                    <a href="#features-of-the-deployment-interface" class="toc-h2 toc-link" data-title="Features of the deployment interface">Features of the deployment interface</a>
+                  </li>
+                  <li>
+                    <a href="#how-do-i-know-my-contract-deployed-successfully" class="toc-h2 toc-link" data-title="How do I know my contract deployed successfully?">How do I know my contract deployed successfully?</a>
+                  </li>
+                  <li>
+                    <a href="#running-a-local-version-of-the-network" class="toc-h2 toc-link" data-title="Running a local version of the network">Running a local version of the network</a>
+                  </li>
+                  <li>
+                    <a href="#deploying-to-devnet" class="toc-h2 toc-link" data-title="Deploying to DevNet">Deploying to DevNet</a>
+                  </li>
+              </ul>
+          </li>
+          <li>
+            <a href="#go-further-with-dapp-development" class="toc-h1 toc-link" data-title="Go further with dApp development">Go further with dApp development</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#building-contracts" class="toc-h2 toc-link" data-title="Building Contracts">Building Contracts</a>
+                  </li>
+                  <li>
+                    <a href="#about-the-cl-blockchain" class="toc-h2 toc-link" data-title="About the CL Blockchain">About the CL Blockchain</a>
+                  </li>
+                  <li>
+                    <a href="#blockchain-101" class="toc-h2 toc-link" data-title="Blockchain 101">Blockchain 101</a>
+                  </li>
+                  <li>
+                    <a href="#cl-blockchain-101" class="toc-h2 toc-link" data-title="CL Blockchain 101">CL Blockchain 101</a>
+                  </li>
+                  <li>
+                    <a href="#rust-101" class="toc-h2 toc-link" data-title="Rust 101">Rust 101</a>
+                  </li>
+                  <li>
+                    <a href="#writing-contracts-on-cl" class="toc-h2 toc-link" data-title="Writing Contracts on CL">Writing Contracts on CL</a>
+                  </li>
+                  <li>
+                    <a href="#using-graphql" class="toc-h2 toc-link" data-title="Using GraphQL">Using GraphQL</a>
+                  </li>
+              </ul>
           </li>
       </ul>
         <ul class="toc-footer">
@@ -254,55 +354,73 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the CasperLabs project, implemented as a new permissionless, decentralized, public blockchain. Our open source Turing-complete smart contract platform is backed by a proof-of-stake (PoS) consensus algorithm, and WebAssembly (wasm). Our particular consensus protocol in the CBC Casper family, backed by Vlad Zamfir’s correct-by-construction (CBC) Casper work, is provably safe and live under partial synchrony without an in-protocol fault tolerance threshold.</p>
+
+<p>Read our <a href="https://techspec.casperlabs.io/en/latest/">Tech Spec</a> to Learn more about what we&#39;re building so you can become a contributor. </p>
+<h3 id='who-is-this-guide-for'>Who is this guide for</h3>
+<p>This documentation is intended for dApp Developers interested in creating <strong>smart contracts</strong>. You can use this documentation to learn about CasperLabs and how you can build applications with tools from our platform.</p>
+<h3 id='purpose-of-this-guide'>Purpose of this guide</h3>
+<p>This document highlights the set of our core documentation prioritized for you to get started with our platform. This documentation is accessed here and located on our GitHub repository, the single source of truth for all Smart Contract Developer documentation.  The topics on the index include present and future documentation initiatives in our roadmap.</p>
+<h3 id='background'>Background</h3>
+<p>The motivation for this roadmap is inspired by feedback we are receiving from your recommendations. We hope you continue to provide your feedback as you embark on this journey with us -- we look forward to building a decentralized future together.</p>
+<h3 id='how-to-use-this-guide'>How to use this guide</h3>
+<p>You can use this guide to install and build dApps to run: </p>
+
+<ul>
+<li>On our network (DevNet) </li>
+<li>Your network of choice </li>
+<li>Your local environment</li>
+</ul>
+<h1 id='getting-started'>Getting Started</h1><h2 id='contract-development'>Contract Development</h2><h2 id='pre-requisites'><strong>Pre-requisites</strong></h2><h1 id='supported-platforms'><strong>Supported platforms</strong></h1><h1 id='using-rust'>Using Rust</h1><h2 id='writing-contracts'>Writing Contracts</h2><h3 id='structuring-your-project'>Structuring your project</h3><h3 id='urefs'>uRefs</h3><h3 id='weighted-keys-and-thresholds'>Weighted Keys and Thresholds</h3><h3 id='payment-code'>Payment Code</h3><h3 id='storing-contracts-amp-calling-them'>Storing contracts &amp; calling them</h3><h3 id='optimizing-for-commutativity-block-merging-properties'>Optimizing for Commutativity (Block Merging) properties</h3><h2 id='the-smart-contract-api'><strong>The smart contract API</strong></h2>
+<p>You can use this documentation to access our CLContract API endpoints, and get information about CLContract types and how to build your own contracts.</p>
 
 <p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
 <p>This example API documentation page was created with <a href="https://github.com/lord/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
+<h2 id='authentication'>Authentication</h2>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
-<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'CLContract'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">CLContract</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">CLContract</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">CLContract</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'casper'</span><span class="p">)</span>
 </code></pre><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
 curl <span class="s2">"api_endpoint_here"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+  -H <span class="s2">"Authorization: casper"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">CLContract</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'CLContract'</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">CLContract</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">);</span>
 </code></pre>
 <blockquote>
-<p>Make sure to replace <code>meowmeowmeow</code> with your API key.</p>
+<p>Make sure to replace <code>casper</code> with your API key.</p>
 </blockquote>
 
-<p>Kittn uses API keys to allow access to the API. You can register a new Kittn API key at our <a href="http://example.com/developers">developer portal</a>.</p>
+<p>CLContract uses API keys to allow access to the API. You can register a new CLContract API key at our <a href="http://example.com/developers">developer portal</a>.</p>
 
-<p>Kittn expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
+<p>CLContract expects for the API key to be included in all API requests to the server in a header that looks like the following:</p>
 
-<p><code>Authorization: meowmeowmeow</code></p>
+<p><code>Authorization: casper</code></p>
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>peaceforceandjoy</code> with your personal API key.
 </aside>
-<h1 id='kittens'>Kittens</h1><h2 id='get-all-kittens'>Get All Kittens</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='clcontracts'>CLContracts</h2><h2 id='contract-examples'><strong>Contract examples</strong></h2><h2 id='get-all-clcontracts'>Get All CLContracts</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'casper'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">Casper</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">caspers</span><span class="p">.</span><span class="nf">get</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">clsmartcontract</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">clsmartcontract</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'casper'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">caspers</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/caspers"</span>
+  -H <span class="s2">"Authorization: casper"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">casper</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">kittens</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">casper</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">caspers</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">caspers</span><span class="p">.</span><span class="nx">get</span><span class="p">();</span>
 </code></pre>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -310,23 +428,23 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 <pre class="highlight json tab-json"><code><span class="p">[</span><span class="w">
   </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Fluffums"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"calico"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
+    </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Min"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"awesome"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"texture"</span><span class="p">:</span><span class="w"> </span><span class="mi">6</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">7</span><span class="w">
   </span><span class="p">},</span><span class="w">
   </span><span class="p">{</span><span class="w">
     </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
     </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-    </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+    </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"golden"</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"texture"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+    </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="w">
   </span><span class="p">}</span><span class="w">
 </span><span class="p">]</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves all kittens.</p>
+<p>This endpoint retrieves all CLContracts.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET http://example.com/api/kittens</code></p>
+<p><code>GET http://example.com/api/CLContracts</code></p>
 <h3 id='query-parameters'>Query Parameters</h3>
 <table><thead>
 <tr>
@@ -336,34 +454,34 @@ You must replace <code>meowmeowmeow</code> with your personal API key.
 </tr>
 </thead><tbody>
 <tr>
-<td>include_cats</td>
+<td>include_CLContracts</td>
 <td>false</td>
-<td>If set to true, the result will also include cats.</td>
+<td>If set to true, the result will also include CLContracts.</td>
 </tr>
 <tr>
 <td>available</td>
 <td>true</td>
-<td>If set to false, the result will include kittens that have already been adopted.</td>
+<td>If set to false, the result will include CLContracts that have already been adopted.</td>
 </tr>
 </tbody></table>
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+Remember — a happy dApp developer is an authenticated dApp developer!
 </aside>
-<h2 id='get-a-specific-kitten'>Get a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<h2 id='get-a-specific-clcontract'>Get a Specific CLContract</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'casper'</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">api</span> <span class="o">=</span> <span class="no">Casper</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">)</span>
+<span class="n">api</span><span class="p">.</span><span class="nf">caspers</span><span class="p">.</span><span class="nf">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">casper</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
+<span class="n">api</span> <span class="o">=</span> <span class="n">casper</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'casper'</span><span class="p">)</span>
+<span class="n">api</span><span class="o">.</span><span class="n">caspers</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/caspers/2"</span>
+  -H <span class="s2">"Authorization: casper"</span>
+</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">casper</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">);</span>
 
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">casper</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'casper'</span><span class="p">);</span>
+<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">caspers</span><span class="p">.</span><span class="nx">get</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
 </code></pre>
 <blockquote>
 <p>The above command returns JSON structured like this:</p>
@@ -371,16 +489,16 @@ Remember — a happy kitten is an authenticated kitten!
 <pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
   </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
   </span><span class="s2">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Max"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"breed"</span><span class="p">:</span><span class="w"> </span><span class="s2">"unknown"</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"fluffiness"</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"cuteness"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="w">
+  </span><span class="s2">"location"</span><span class="p">:</span><span class="w"> </span><span class="s2">"secret"</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"type"</span><span class="p">:</span><span class="w"> </span><span class="mi">8</span><span class="p">,</span><span class="w">
+  </span><span class="s2">"value"</span><span class="p">:</span><span class="w"> </span><span class="mi">11</span><span class="w">
 </span><span class="p">}</span><span class="w">
 </span></code></pre>
-<p>This endpoint retrieves a specific kitten.</p>
+<p>This endpoint retrieves a specific contract.</p>
 
 <aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
 <h3 id='http-request-2'>HTTP Request</h3>
-<p><code>GET http://example.com/kittens/&lt;ID&gt;</code></p>
+<p><code>GET http://example.com/CLContracts/&lt;ID&gt;</code></p>
 <h3 id='url-parameters'>URL Parameters</h3>
 <table><thead>
 <tr>
@@ -390,107 +508,80 @@ Remember — a happy kitten is an authenticated kitten!
 </thead><tbody>
 <tr>
 <td>ID</td>
-<td>The ID of the kitten to retrieve</td>
-</tr>
-</tbody></table>
-<h2 id='delete-a-specific-kitten'>Delete a Specific Kitten</h2><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="p">.</span><span class="nf">kittens</span><span class="p">.</span><span class="nf">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
-
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="o">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-<span class="n">api</span><span class="o">.</span><span class="n">kittens</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
-</code></pre><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://example.com/api/kittens/2"</span>
-  -X DELETE
-  -H <span class="s2">"Authorization: meowmeowmeow"</span>
-</code></pre><pre class="highlight javascript tab-javascript"><code><span class="kr">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">'kittn'</span><span class="p">);</span>
-
-<span class="kd">let</span> <span class="nx">api</span> <span class="o">=</span> <span class="nx">kittn</span><span class="p">.</span><span class="nx">authorize</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">);</span>
-<span class="kd">let</span> <span class="nx">max</span> <span class="o">=</span> <span class="nx">api</span><span class="p">.</span><span class="nx">kittens</span><span class="p">.</span><span class="k">delete</span><span class="p">(</span><span class="mi">2</span><span class="p">);</span>
-</code></pre>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="s2">"id"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-  </span><span class="s2">"deleted"</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="s2">":("</span><span class="w">
-</span><span class="p">}</span><span class="w">
-</span></code></pre>
-<p>This endpoint deletes a specific kitten.</p>
-<h3 id='http-request-3'>HTTP Request</h3>
-<p><code>DELETE http://example.com/kittens/&lt;ID&gt;</code></p>
-<h3 id='url-parameters-2'>URL Parameters</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>ID</td>
-<td>The ID of the kitten to delete</td>
-</tr>
-</tbody></table>
-<h1 id='errors'>Errors</h1>
-<aside class="notice">
-This error section is stored in a separate file in <code>includes/_errors.md</code>. Slate allows you to optionally separate out your docs into many files...just save them to the <code>includes</code> folder and add them to the top of your <code>index.md</code>'s frontmatter. Files are included in the order listed.
-</aside>
-
-<p>The Kittn API uses the following error codes:</p>
-
-<table><thead>
-<tr>
-<th>Error Code</th>
-<th>Meaning</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>400</td>
-<td>Bad Request -- Your request is invalid.</td>
-</tr>
-<tr>
-<td>401</td>
-<td>Unauthorized -- Your API key is wrong.</td>
-</tr>
-<tr>
-<td>403</td>
-<td>Forbidden -- The kitten requested is hidden for administrators only.</td>
-</tr>
-<tr>
-<td>404</td>
-<td>Not Found -- The specified kitten could not be found.</td>
-</tr>
-<tr>
-<td>405</td>
-<td>Method Not Allowed -- You tried to access a kitten with an invalid method.</td>
-</tr>
-<tr>
-<td>406</td>
-<td>Not Acceptable -- You requested a format that isn&#39;t json.</td>
-</tr>
-<tr>
-<td>410</td>
-<td>Gone -- The kitten requested has been removed from our servers.</td>
-</tr>
-<tr>
-<td>418</td>
-<td>I&#39;m a teapot.</td>
-</tr>
-<tr>
-<td>429</td>
-<td>Too Many Requests -- You&#39;re requesting too many kittens! Slow down!</td>
-</tr>
-<tr>
-<td>500</td>
-<td>Internal Server Error -- We had a problem with our server. Try again later.</td>
-</tr>
-<tr>
-<td>503</td>
-<td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
+<td>The ID of the contract to retrieve</td>
 </tr>
 </tbody></table>
 
+<!--## Delete a Specific CLContract-->
+
+<!--```ruby-->
+
+<!--require 'casper'-->
+
+<!--api = Casper::APIClient.authorize!('casper')-->
+
+<!--api.caspers.delete(2)-->
+
+<!--```-->
+
+<!--```python-->
+
+<!--import casper-->
+
+<!--api = casper.authorize('casper')-->
+
+<!--api.caspers.delete(2)-->
+
+<!--```-->
+
+<!--```shell-->
+
+<!--curl "http://example.com/api/caspers/2"-->
+
+<!--  -X DELETE-->
+
+<!--  -H "Authorization: casper"-->
+
+<!--```-->
+
+<!--```javascript-->
+
+<!--const casper = require('casper');-->
+
+<!--let api = casper.authorize('casper');-->
+
+<!--let max = api.caspers.delete(2);-->
+
+<!--```-->
+
+<!--> The above command returns JSON structured like this:-->
+
+<!--```json-->
+
+<!--{-->
+
+<!--  "id": 2,-->
+
+<!--  "deleted" : ":("-->
+
+<!--}-->
+
+<!--```-->
+
+<!--This endpoint deletes a specific contract.-->
+
+<!--### HTTP Request-->
+
+<!--`DELETE http://example.com/CLContracts/<ID>`-->
+
+<!--### URL Parameters-->
+
+<!--Parameter | Description-->
+
+<!----------- | ------------->
+
+<!--ID | The ID of the contract to delete -->
+<h1 id='debugging-contracts'>Debugging contracts</h1><h3 id='api-and-error-codes-in-the-execution-engine'>API and error codes in the Execution Engine</h3><h3 id='checking-for-transaction-confirmations'>Checking for transaction confirmations</h3><h3 id='using-graphql'>Using GraphQL</h3><h3 id='using-the-grpc-interface'>Using the gRPC interface</h3><h3 id='deciphering-data-in-blocks'>Deciphering data in blocks</h3><h1 id='deploying-contracts'>Deploying Contracts</h1><h2 id='how-to-structure-your-deployments'>How to structure your deployments</h2><h2 id='features-of-the-deployment-interface'>Features of the deployment interface</h2><h2 id='how-do-i-know-my-contract-deployed-successfully'>How do I know my contract deployed successfully?</h2><h2 id='running-a-local-version-of-the-network'>Running a local version of the network</h2><h2 id='deploying-to-devnet'>Deploying to DevNet</h2><h1 id='go-further-with-dapp-development'>Go further with dApp development</h1><h2 id='building-contracts'>Building Contracts</h2><h2 id='about-the-cl-blockchain'>About the CL Blockchain</h2><h2 id='blockchain-101'>Blockchain 101</h2><h3 id='shared-global-state'>Shared global state</h3><h2 id='cl-blockchain-101'>CL Blockchain 101</h2><h3 id='the-dag-structure'>The DAG structure</h3><h3 id='block-merging-in-cl'>Block Merging in CL</h3><h3 id='finalization-amp-safety'>Finalization &amp; Safety</h3><h2 id='rust-101'>Rust 101</h2><h2 id='writing-contracts-on-cl'>Writing Contracts on CL</h2><h3 id='the-contract-api'>The contract API</h3><h3 id='structuring-your-project'>Structuring your project</h3><h3 id='testing-your-project'>Testing your project</h3><h2 id='using-graphql'>Using GraphQL</h2><h3 id='to-debug-contracts'>To debug contracts</h3><h3 id='to-learn-about-the-network'>To learn about the network</h3>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
